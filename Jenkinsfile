@@ -16,10 +16,12 @@ pipeline {
             }
         }
 
+/*
         stage('Selenium Test') {
             steps {
                 sh 'php artisan dusk'
             }
         }
+        */
   }
 }

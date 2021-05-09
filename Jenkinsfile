@@ -12,16 +12,18 @@ pipeline {
         }
         stage("Unit Test") {
             steps {
-                sh 'php artisan test'
+              //  sh 'php artisan test'
+              echo "Unit Test"
             }
         }
 
-/*
+
         stage('Selenium Test') {
             steps {
-                sh 'php artisan dusk'
+               // sh 'php artisan dusk'
+               echo "Selenium Test"
             }
         }
-        */
+
   }
 }

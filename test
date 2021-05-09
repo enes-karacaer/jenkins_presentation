@@ -1,0 +1,29 @@
+
+
+
+
+                                        pipeline {
+                                            agent any
+                                            stages {
+                                                stage('build') {
+                                                    steps {
+                                                        echo 'testing'
+                                                    }
+                                                }
+                                                stage('Run Tests') {
+                                                    steps {
+                                                        echo 'Test on Linux'
+                                                        echo 'Test on Windows'
+                                                    }
+                                                }
+
+                                                 stage('Deploy') {
+                                                    steps {
+                                                        echo 'Deploy'
+                                                    }
+                                                }
+                                            }
+                                        }
+
+
+
